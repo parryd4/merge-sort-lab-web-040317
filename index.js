@@ -18,7 +18,8 @@ function mergeSort( arr ) {
   if ( arr.length < 2 ){
     return arr
   } else {
-    merge(mergeSort(firstHalf),mergeSort(secondHalf))
+    // this lab was failing for days/months because I didn't return the merge
+    return merge(mergeSort(firstHalf),mergeSort(secondHalf))
   }
 
 }
